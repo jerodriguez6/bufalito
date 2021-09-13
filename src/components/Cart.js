@@ -4,17 +4,15 @@ import "../styles/styles.css";
 
 const Cart = ({ cart, setCart }) => {
     const viewCart = () => {
-        {
-            document.querySelector(
-                "div.container__header__cartDiv--list"
-            ).style.display = "none"
-                ? (document.querySelector(
-                      "div.container__header__cartDiv--list"
-                  ).style.display = "flex")
-                : (document.querySelector(
-                      "div.container__header__cartDiv--list"
-                  ).style.display = "none");
-        }
+        document.querySelector(
+            "div.container__header__cartDiv--list"
+        ).style.display = "none"
+            ? (document.querySelector(
+                  "div.container__header__cartDiv--list"
+              ).style.display = "flex")
+            : (document.querySelector(
+                  "div.container__header__cartDiv--list"
+              ).style.display = "none");
     };
 
     const closeDiv = () => {

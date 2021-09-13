@@ -11,13 +11,13 @@ import Criolla from "./images/Criolla.png";
 import Patagonia from "./images/patagonia.png";
 
 function App() {
-    const [burgers, setBurgers] = useState([
+    const burgers = [
         { id: 5, image: Salteña, nombre: "SALTEÑA", precio: 8000 },
         { id: 2, image: Porteña, nombre: "PORTEÑA", precio: 12000 },
         { id: 3, image: Chicken, nombre: "CHICKEN", precio: 9000 },
         { id: 4, image: Criolla, nombre: "CRIOLLA", precio: 8000 },
         { id: 1, image: Patagonia, nombre: "PATAGONIA", precio: 11000 },
-    ]);
+    ];
 
     const [cart, setCart] = useState([]);
 
